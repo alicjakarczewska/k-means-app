@@ -24,10 +24,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 from sklearn.metrics import silhouette_score
 
 st.set_page_config(
-     page_title="K-means App",
-    #  layout="wide",
-    #  initial_sidebar_state="collapsed",
-    )
+     page_title="K-means App")
 
 url = 'IRISDAT.TXT'
 df = pd.read_csv(url, sep=',', comment='#') 
@@ -37,9 +34,9 @@ with st.sidebar:
     # st.subheader('Info')
     exp_1 = st.expander("Info", expanded=False)
     with exp_1:
-        repo = '[Github](http://github.com)'
-        ak = '[Alicja Karczewska](http://github.com)'
-        mc = '[Marek Czarkowski](http://github.com)'
+        repo = '[Github](https://github.com/alicjakarczewska/k-means-app)'
+        ak = '[Alicja Karczewska](https://github.com/alicjakarczewska)'
+        mc = '[Marek Czarkowski](https://github.com/MARU007)'
         st.subheader('Repozytorium kodu')
         st.markdown(repo, unsafe_allow_html=True)
         st.subheader('Autorzy')
