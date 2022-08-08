@@ -266,12 +266,12 @@ st.header("3. Metryka Chebysheva - L∞ - maksimowa")
 k_means_clustering(crim_lstat_array, k=3, repeats=20, dist="chebyshev")
 plt.clf()
 
-st.header("4. Metryka Mahalanobisa")
-data = np.array([df['LISDLG'],df['LISSZE'],df['PLADLG'],df['PLASZE']])
-covMatrix = np.cov(data,bias=True)
-st.write(covMatrix)
-k_means_clustering(crim_lstat_array, k=3, repeats=10, dist="mahal")
-plt.clf()
+# st.header("4. Metryka Mahalanobisa")
+# data = np.array([df['LISDLG'],df['LISSZE'],df['PLADLG'],df['PLASZE']])
+# covMatrix = np.cov(data,bias=True)
+# st.write(covMatrix)
+# k_means_clustering(crim_lstat_array, k=3, repeats=10, dist="mahal")
+# plt.clf()
 
 
 def sklearn_k_means(X, k=3, iterations=10):
